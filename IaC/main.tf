@@ -32,7 +32,7 @@ resource "aws_security_group" "km_rds_sg" {
   }
 }
 
-resource "aws_kms_key" "km_db_kms_key" {
+resource "aws_kms_key" "km_fddb_kms_key" {
   description             = "KMS Key for DB instance ${var.environment}"
   deletion_window_in_days = 10
   enable_key_rotation     = true
